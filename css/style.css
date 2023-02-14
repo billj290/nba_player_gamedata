@@ -1,0 +1,68 @@
+*
+{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+section
+{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+}
+section .signin
+{
+    position:absolute;
+    width: 500px;
+    background: #98d98e;
+    z-index:1000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.8);
+}
+
+section .signin .content .form .inputBx i
+{
+    position: absolute;
+    left: 0;
+    padding: 0px 200px;
+    font-size: 20px;
+    color: #aaa;
+    transition: 0.5s;
+    pointer-events: none;
+}
+.signin .content .form .inputBx input:focus ~ i,
+.signin .content .form .inputBx input:valid ~ i
+{
+    transform: translateY(-10px);
+}
+.signin .content .form .links a
+{
+    text-decoration: none;
+    color: rgb(0,67,137);
+}
+.signin .content .form .inputBx input[type="submit"]
+{
+    padding: 10px;
+    background: #c3d825;
+    color: rgb(0,67,137);
+    width: 100%;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+/* #leftTeampic
+{
+    max-height: 320px;
+}
+#leftTeamppicImg
+{
+max-height:100%
+} */
